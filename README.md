@@ -10,6 +10,6 @@ If by distributed storage you mean "sharding", then yes, if the consumer goes th
 
 **How does it handle big data?**
 
-Couple things: 
+Before I answer that, just a couple things: 
  - The data will probably not write completely if the bytes of the key, value, and delimiter exceed `$(getconf ARG_MAX)`.
  - No write atomicity
